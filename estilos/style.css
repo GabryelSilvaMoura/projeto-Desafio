@@ -1,9 +1,11 @@
 /* Estilo principal do site */
 
+
 /* Configurações Gerais */
 *{
     margin: 0px;
     padding: 0px;
+    font-family: sans-serif;
 }
 
 html{
@@ -17,19 +19,25 @@ html{
     display: inline-block;
     position: absolute;
 
-    padding: 25px;
-    background-color: red;
+    padding: 20px;
+    background-color: rgba(255, 0, 0, 0.603);
 
     right: 30px;
     bottom: 30px;
 }
 
+#subir .icon{
+    font-size: 1.3em;
+    color: white;
+}
 
+#subir:active{
+    background-color: rgba(255, 0, 0, 0.836);
+}
 
 /* Cabecalho */
 header{
     padding: 20px;
-    background-color: gray;
     border-bottom: 1px solid black;
 
     display: flex;
@@ -37,6 +45,31 @@ header{
     align-items: center;
 }
 
-header > section{
-    background-color: aquamarine;
+header h1{
+    font-size: 2.5em;
+    font-weight: 600;
+}
+
+header > section ul{
+    display: flex;
+
+    column-gap: 70px;
+}
+
+header section ul> li{
+    list-style-type: none;
+    font-size: 1.3em;
+    font-weight: 500;
+}
+
+header section ul> li> a{
+    text-decoration: none;
+    padding: 10px;
+    transition: 0.5s ease;
+    color: cornflowerblue;
+}
+
+header section ul> li> a:hover{
+    background-color: red;
+    color: white;
 }
