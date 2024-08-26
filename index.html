@@ -11,23 +11,41 @@
     <!-- Link Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <title>Titulo</title>
+
+    <!-- Link Java Script -->
+    <script src="Java Script/script.js"></script>
 </head>
 
-<body>
-    <header>
+<body onresize="mudouTamanho()">
+    <header id="cabecalho" class="menuH">
         <h1>Titulo</h1>
 
-        <nav>
-            <ul>
-                <li><a href="3">Home</a></li>
+        <section>
+            <!-- <div>
+                <i class="bi bi-people-fill"></i></i>
+            </div> -->
 
-                <li><a href="#">Cursos</a></li>
-                
-                <li><a href="#">Login</a></li>
+            <!-- <div class="butao">
+                <i class="bi bi-list" onclick="clicou()"></i>
+            </div> -->
+            
+            
 
-                <li><i class="bi bi-people-fill"></i></li>
-            </ul>
-        </nav>
+            <!-- <nav id="items"> -->
+                <ul>
+                    <li><a href="3">Home</a></li>
+
+                    <li><a href="#">Cursos</a></li>
+                    
+                    <li><a href="#">Login</a></li>
+
+                    <!-- <li><i class="bi bi-people-fill"></i></li> -->
+                </ul>
+            </nav>
+        </section>
     </header>
+
+    
+    <div id="subir"><a href="#cabecalho"><i class="bi bi-arrow-up"></i></a></div>
 </body>
 </html>
