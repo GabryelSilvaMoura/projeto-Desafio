@@ -48,30 +48,47 @@ header{
 }
 
 header h1{
+    text-align: center;
+    width: 20%;
     font-size: 2.5em;
     font-weight: 600;
 }
 
-header > section ul{
-    display: flex;
+header > nav{
+    width: 60%;
+}
 
+header > nav ul{
+    display: flex;
+    justify-content: center;
     column-gap: 70px;
 }
 
-header section ul> li{
+header > nav ul > li{
     list-style-type: none;
     font-size: 1.3em;
     font-weight: 500;
 }
 
-header section ul> li> a{
+header > nav ul > li > a{
     text-decoration: none;
     padding: 10px 25px;
     transition: 0.5s ease;
     color: cornflowerblue;
 }
 
-header section ul> li> a:hover{
+header > nav ul > li > a:hover{
     background-color: red;
     color: white;
+}
+
+header > menu{
+    text-align: center;
+    width: 20%;
+}
+
+header > menu > #conta > i{
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 20px;
 }
