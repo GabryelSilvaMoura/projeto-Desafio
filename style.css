@@ -1,0 +1,96 @@
+/* Estilo principal do site */
+
+
+/* Configurações Gerais */
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+html{
+    height: 100vh;
+    width: 100vw;
+
+}
+
+/* Botão subir */
+#subir{
+    display: inline-block;
+    position: absolute;
+
+    padding: 20px;
+    background-color: rgba(255, 0, 0, 0.603);
+
+    right: 30px;
+    bottom: 30px;
+    cursor: pointer;
+    position: fixed;
+}
+
+#subir .icon{
+    font-size: 1.3em;
+    color: white;
+}
+
+#subir:active{
+    background-color: rgba(255, 0, 0, 0.836);
+}
+
+/* Cabecalho */
+header{
+    padding: 20px;
+    border-bottom: 1px solid black;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+header h1{
+    text-align: center;
+    width: 20%;
+    font-size: 2.5em;
+    font-weight: 600;
+}
+
+header > nav{
+    width: 60%;
+}
+
+header > nav ul{
+    display: flex;
+    justify-content: center;
+    column-gap: 70px;
+}
+
+header > nav ul > li{
+    list-style-type: none;
+    font-size: 1.3em;
+    font-weight: 500;
+}
+
+header > nav ul > li > a{
+    text-decoration: none;
+    padding: 10px 25px;
+    transition: 0.5s ease;
+    color: cornflowerblue;
+}
+
+header > nav ul > li > a:hover{
+    background-color: red;
+    color: white;
+}
+
+header > menu{
+    text-align: center;
+    width: 20%;
+}
+
+header > menu > #conta > i{
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 20px;
+}
+
+/* Conteudo Principal */
