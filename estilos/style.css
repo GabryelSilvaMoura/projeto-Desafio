@@ -93,4 +93,32 @@ header > menu > #conta > i{
     padding: 20px;
 }
 
+/* Banner */
+
+
 /* Conteudo Principal */
+#conteudo{
+    background-color: aqua;
+}
+
+#conteudo > article{
+    width: 90%;
+    background-color: brown;
+    margin: auto;
+
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    column-gap: 5px;
+    row-gap: 20px;
+}
+
+#conteudo > article > .cursos{
+
+}
+
+#conteudo > article > .cursos img{
+    width: 300px;
+    height: 200px;
+    background-color: crimson;
+}
