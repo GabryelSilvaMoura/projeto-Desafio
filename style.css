@@ -100,7 +100,7 @@ header > menu > #conta > i{
 
 #conteudo > article{
     width: 90%;
-    background-color: brown;
+    /* background-color: brown; */
     margin: auto;
 
     display: flex;
@@ -110,12 +110,29 @@ header > menu > #conta > i{
 }
 
 #conteudo > article > .cursos{
+    display: block;
+    position: relative;
     margin: auto;
 }
+
 
 #conteudo > article > .cursos img{
     width: 300px;
     height: 200px;
     background-color: crimson;
     object-fit: cover;
+    box-shadow: 1px solid black;
+    cursor: pointer;
+
+    transition: 0.5s ease;
+}
+
+#conteudo > article > .cursos img:hover{
+    width: 300px;
+    height: 215px;
+}
+
+
+.info{
+    display: none;
 }
